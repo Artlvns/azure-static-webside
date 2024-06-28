@@ -17,6 +17,7 @@ variable "storage_account_name" {
 variable "account_tier" {
   description = "Storage acc tier"
   type        = string
+  default     = "Standard"
 }
 
 variable "account_replication_type" {
