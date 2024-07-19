@@ -20,3 +20,12 @@ jobs:
         DEFAULT_BUMP: patch
         INITIAL_VERSION: 0.2.0
         RELEASE_BRANCHES: master
+    - name: Create Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        automatic_release_tag: ${{ steps.tag.outputs.tag }}
+        files: |
+          LICENSE.txt
+          *.tf
