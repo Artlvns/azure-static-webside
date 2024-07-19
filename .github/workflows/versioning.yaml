@@ -19,3 +19,4 @@ jobs:
         WITH_V: true   
         DEFAULT_BUMP: patch
         INITIAL_VERSION: 0.2.0
+        RELEASE_BRANCHES: master
