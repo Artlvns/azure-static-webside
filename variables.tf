@@ -9,9 +9,14 @@ variable "resource_group_location" {
   type        = string
 }
 #Storage Acc variables
-variable "storage_account_name" {
+variable "storage_account_name_prefix" {
   description = "Storage account name"
   type        = string
+
+  validation {
+    error_message = "Storage account name prefix must be up to 18 characters long."
+    condition     = length(var.storage_account_name_prefix) <= 18
+  }
 }
 
 variable "account_tier" {
@@ -23,11 +28,17 @@ variable "account_tier" {
 variable "account_replication_type" {
   description = "Storage acc replication type"
   type        = string
+  default     = "LRS"
 }
 
 variable "storage_account_kind" {
   description = "Storage Account Kind"
   type        = string
+
+  validation {
+    error_message = "Storage account kind must be StorageV2 or BlockBlobStorage."
+    condition     = contains(["StorageV2", "BlockBlobStorage"], var.storage_account_kind)
+  }
 }
 
 #Static website variables 
