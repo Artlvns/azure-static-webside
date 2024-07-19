@@ -20,11 +20,23 @@ jobs:
         DEFAULT_BUMP: patch
         INITIAL_VERSION: 0.2.0
         RELEASE_BRANCHES: master
+
+#    - name: Create Release
+#      uses: "marvinpinto/action-automatic-releases@latest"
+#      with:
+#        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#        prerelease: false
+#        automatic_release_tag: ${{ steps.tag.outputs.tag }}
+#        files: |
+#          LICENSE.txt
+# Test GH own release action
     - name: Create Release
-      uses: "marvinpinto/action-automatic-releases@latest"
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        tag_name: ${{ steps.tag.outputs.tag }}
+        release_name: Release ${{ steps.tag.outputs.tag }}
+        draft: false
         prerelease: false
-        automatic_release_tag: ${{ steps.tag.outputs.tag }}
-        files: |
-          LICENSE.txt
