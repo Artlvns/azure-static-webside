@@ -28,4 +28,3 @@ jobs:
         automatic_release_tag: ${{ steps.tag.outputs.tag }}
         files: |
           LICENSE.txt
-          *.tf
