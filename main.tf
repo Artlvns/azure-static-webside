@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "storage_account_rg" {
 }
 
 resource "azurerm_storage_account" "static_ws_sta" {
-  name                     = "${var.storage_account_name}${random_string.random_st.id}"
+  name                     = "${var.storage_account_name_prefix}${random_string.random_st.id}"
   location                 = azurerm_resource_group.storage_account_rg.location
   resource_group_name      = var.resource_group_name
   account_tier             = var.account_tier
