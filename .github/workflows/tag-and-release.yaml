@@ -16,7 +16,7 @@ jobs:
       uses: anothrNick/github-tag-action@1.61.0
       id: tag
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         WITH_V: true   
         DEFAULT_BUMP: patch
         INITIAL_VERSION: 0.2.0
