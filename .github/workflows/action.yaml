@@ -6,12 +6,20 @@ on:
 
 jobs:
   create-docs:
+    permissions:
+      contents: write
+      pull-requests: write
+
     runs-on: ubuntu-latest
     steps:
+    - id: checkout
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
     - id: validate-readme
       shell: bash
       run: |
-        set -o allexport; source "${{ github.action_path }}/helpers.sh"; set +o allexport;
+        set -o allexport; source ".github/workflows/helpers.sh"; set +o allexport;
         # enable debug
         # set -x
 
