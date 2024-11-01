@@ -42,7 +42,7 @@ jobs:
             else
                 log-info "Delimiters do not exist in ${README_FILE}"
                 log-info "Adding delimiters to ${README_FILE}"
-                echo "This is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters." >> "${README_FILE}"
+                echo "/nThis is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters." >> "${README_FILE}"
                 {
                     echo "<!-- BEGIN_TF_DOCS -->"
                     echo " "
