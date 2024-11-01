@@ -42,7 +42,7 @@ jobs:
             else
                 log-info "Delimiters do not exist in ${README_FILE}"
                 log-info "Adding delimiters to ${README_FILE}"
-                echo "/nThis is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters." >> "${README_FILE}"
+                printf "\nThis is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters." >> "${README_FILE}"
                 {
                     echo "<!-- BEGIN_TF_DOCS -->"
                     echo " "
@@ -56,7 +56,7 @@ jobs:
         fi
       continue-on-error: true
     - id: run-terraform-docs
-      uses: terraform-docs/gh-actions@aeae0038ed47a547e0c0fca5c059d3335f48fb25
+      uses: terraform-docs/gh-actions@aeae0038ed47a547e0c0fca5c059d3335f48fb25 # v1.3.0
       with:
         working-dir: ${{ github.workspace }}
         output-file: README.md
