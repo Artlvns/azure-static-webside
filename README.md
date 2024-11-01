@@ -1,6 +1,7 @@
 ## Terraform Azure static website module
 
-Created for learning modules purposes.This is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters.
+Created for learning modules purposes.
+Below is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters.
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
