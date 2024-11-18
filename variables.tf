@@ -32,7 +32,7 @@ variable "account_replication_type" {
 }
 
 variable "storage_account_kind" {
-  description = "Storage account Kind"
+  description = "Storage account Kind."
   type        = string
 
   validation {
