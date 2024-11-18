@@ -45,12 +45,12 @@ variable "storage_account_kind" {
 # (static_website can only be set when the account_kind is set to StorageV2 or BlockBlobStorage.)
 
 variable "static_website_index_document" {
-  description = "static website index document"
+  description = "Static website index document"
   type        = string
 }
 
 variable "static_website_error_404_document" {
-  description = "static website error 404 document"
+  description = "Static website error 404 document"
   type        = string
 }
 
