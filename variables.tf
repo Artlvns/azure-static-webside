@@ -31,7 +31,7 @@ variable "account_replication_type" {
   default     = "LRS"
 }
 
-variable "storage_account_kind" {
+variable "storage_account_kind." {
   description = "Storage account Kind"
   type        = string
 
