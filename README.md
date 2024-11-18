@@ -2,6 +2,8 @@
 
 Created for learning modules purposes.
 Below is a placeholder for Terraform-docs generated documentation. Do not edit between the delimiters.
+Test docs: tag in release pipeline.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
