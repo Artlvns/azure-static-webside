@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Artlvns/azure-static-website/compare/v1.1.0...v2.0.0) (2024-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* new version here.
+
+### Miscellaneous Chores
+
+* new version here. ([f97c8b5](https://github.com/Artlvns/azure-static-website/commit/f97c8b5962afb4e5ae2db0c1443f434334f29e66))
+
 ## [1.1.0](https://github.com/Artlvns/azure-static-website/compare/v1.0.0...v1.1.0) (2024-11-18)
 
 
