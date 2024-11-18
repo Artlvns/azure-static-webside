@@ -20,7 +20,7 @@ variable "storage_account_name_prefix" {
 }
 
 variable "account_tier" {
-  description = "Storage account tier"
+  description = "Storage account tier."
   type        = string
   default     = "Standard"
 }
