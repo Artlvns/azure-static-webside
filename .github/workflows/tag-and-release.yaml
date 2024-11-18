@@ -1,34 +1,35 @@
-name: Bump version
+name: Release please workflow
+
 on:
   push:
     branches:
       - master
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: '0'
-        
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.61.0
-      id: tag
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        WITH_V: true   
-        DEFAULT_BUMP: patch
-        INITIAL_VERSION: 0.2.0
-        RELEASE_BRANCHES: master
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ steps.tag.outputs.tag }}
-        release_name: Release ${{ steps.tag.outputs.tag }}
-        draft: false
-        prerelease: false
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+
+jobs:
+  release-pr:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release-please
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: terraform-module
+
+  release-please-release:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: tag-release
+        with:
+          path: modules/${{ matrix.module }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: terraform-module
