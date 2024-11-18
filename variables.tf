@@ -20,7 +20,7 @@ variable "storage_account_name_prefix" {
 }
 
 variable "account_tier" {
-  description = "Storage account tier."
+  description = "Storage account tier"
   type        = string
   default     = "Standard"
 }
@@ -32,7 +32,7 @@ variable "account_replication_type" {
 }
 
 variable "storage_account_kind" {
-  description = "Storage account Kind."
+  description = "Storage account Kind"
   type        = string
 
   validation {
@@ -45,7 +45,7 @@ variable "storage_account_kind" {
 # (static_website can only be set when the account_kind is set to StorageV2 or BlockBlobStorage.)
 
 variable "static_website_index_document" {
-  description = "static website index document."
+  description = "static website index document"
   type        = string
 }
 
