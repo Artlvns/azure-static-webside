@@ -21,6 +21,6 @@ jobs:
         with:
           path: .
           changelog-path: CHANGELOG.md
-          command: github-release
+          command: release-pr
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: terraform-module
