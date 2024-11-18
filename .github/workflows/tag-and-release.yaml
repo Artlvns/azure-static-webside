@@ -16,8 +16,11 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-      - uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@v3
         id: release-please
         with:
+          path: .
+          changelog-path: CHANGELOG.md
+          command: github-release
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: terraform-module
