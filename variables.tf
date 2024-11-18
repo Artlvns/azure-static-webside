@@ -26,7 +26,7 @@ variable "account_tier" {
 }
 
 variable "account_replication_type" {
-  description = "Storage account replication type"
+  description = "Storage account replication type."
   type        = string
   default     = "LRS"
 }
