@@ -20,19 +20,19 @@ variable "storage_account_name_prefix" {
 }
 
 variable "account_tier" {
-  description = "Storage acc tier"
+  description = "Storage account tier"
   type        = string
   default     = "Standard"
 }
 
 variable "account_replication_type" {
-  description = "Storage acc replication type"
+  description = "Storage account replication type"
   type        = string
   default     = "LRS"
 }
 
 variable "storage_account_kind" {
-  description = "Storage Account Kind"
+  description = "Storage account Kind"
   type        = string
 
   validation {
