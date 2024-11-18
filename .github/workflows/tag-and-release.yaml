@@ -21,15 +21,3 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: terraform-module
-
-  release-please-release:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-    steps:
-      - uses: googleapis/release-please-action@v4
-        id: tag-release
-        with:
-          path: modules/${{ matrix.module }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: terraform-module
