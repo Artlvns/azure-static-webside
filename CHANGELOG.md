@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/Artlvns/azure-static-website/compare/v2.0.0...v2.0.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* test patch release. ([aa33aa5](https://github.com/Artlvns/azure-static-website/commit/aa33aa5409b5b22b08cd7f3cf1cc3bf076b66324))
+
 ## [2.0.0](https://github.com/Artlvns/azure-static-website/compare/v1.1.0...v2.0.0) (2024-11-18)
 
 
