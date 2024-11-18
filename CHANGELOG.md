@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/Artlvns/azure-static-website/compare/v2.0.1...v2.0.2) (2024-11-18)
+
+
+### Documentation
+
+* revert README.md test update ([2d41006](https://github.com/Artlvns/azure-static-website/commit/2d41006b119529009452e8cf8d487336de9f1bae))
+
 ## [2.0.1](https://github.com/Artlvns/azure-static-website/compare/v2.0.0...v2.0.1) (2024-11-18)
 
 
