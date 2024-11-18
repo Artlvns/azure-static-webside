@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Artlvns/azure-static-website/compare/v1.0.0...v1.1.0) (2024-11-18)
+
+
+### Features
+
+* bran new shiny feature ([b864f26](https://github.com/Artlvns/azure-static-website/commit/b864f26153c7f88cc0f865e112f12ef61e17eabd))
+
 ## [1.0.0](https://github.com/Artlvns/azure-static-website/compare/v0.3.12...v1.0.0) (2024-11-18)
 
 
