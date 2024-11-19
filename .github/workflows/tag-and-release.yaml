@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   tf:
-    uses: dsb-norge/github-actions-terraform/.github/workflows/terraform-module-release@release
+    uses: dsb-norge/github-actions-terraform/.github/workflows/terraform-module-release.yaml@release
     secrets: inherit
     permissions:
         contents: write  # required for checkout action. 
