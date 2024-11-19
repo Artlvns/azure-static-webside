@@ -14,8 +14,6 @@ jobs:
   tf:
     uses: dsb-norge/github-actions-terraform/.github/workflows/terraform-module-release.yaml@release
     secrets: inherit
-    with:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
         contents: write  # required for checkout action. 
         id-token: write # required for checkout action
