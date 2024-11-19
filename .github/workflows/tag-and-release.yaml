@@ -16,7 +16,7 @@ jobs:
     secrets: inherit
     permissions:
         contents: write  # required for checkout action. 
-        id-token: write # required for Azre passwodless login
+        id-token: write # required for checkout action
         pull-requests: write # required for commenting on PR
     with:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
+      github-token: secrets.GITHUB_TOKEN
