@@ -1,30 +1,5 @@
 # Changelog
 
-## [2.0.2](https://github.com/Artlvns/azure-static-website/compare/v2.0.1...v2.0.2) (2024-11-18)
-
-
-### Documentation
-
-* revert README.md test update ([2d41006](https://github.com/Artlvns/azure-static-website/commit/2d41006b119529009452e8cf8d487336de9f1bae))
-
-## [2.0.1](https://github.com/Artlvns/azure-static-website/compare/v2.0.0...v2.0.1) (2024-11-18)
-
-
-### Bug Fixes
-
-* test patch release. ([aa33aa5](https://github.com/Artlvns/azure-static-website/commit/aa33aa5409b5b22b08cd7f3cf1cc3bf076b66324))
-
-## [2.0.0](https://github.com/Artlvns/azure-static-website/compare/v1.1.0...v2.0.0) (2024-11-18)
-
-
-### ⚠ BREAKING CHANGES
-
-* new version here.
-
-### Miscellaneous Chores
-
-* new version here. ([f97c8b5](https://github.com/Artlvns/azure-static-website/commit/f97c8b5962afb4e5ae2db0c1443f434334f29e66))
-
 ## [1.1.0](https://github.com/Artlvns/azure-static-website/compare/v1.0.0...v1.1.0) (2024-11-18)
 
 

@@ -20,19 +20,19 @@ variable "storage_account_name_prefix" {
 }
 
 variable "account_tier" {
-  description = "Storage account tier"
+  description = "Storage account tier."
   type        = string
   default     = "Standard"
 }
 
 variable "account_replication_type" {
-  description = "Storage account replication type"
+  description = "Storage account replication type."
   type        = string
   default     = "LRS"
 }
 
 variable "storage_account_kind" {
-  description = "Storage account kind"
+  description = "Storage account Kind"
   type        = string
 
   validation {
@@ -45,12 +45,12 @@ variable "storage_account_kind" {
 # (static_website can only be set when the account_kind is set to StorageV2 or BlockBlobStorage.)
 
 variable "static_website_index_document" {
-  description = "Static website index document"
+  description = "static website index document"
   type        = string
 }
 
 variable "static_website_error_404_document" {
-  description = "Static website error 404 document"
+  description = "static website error 404 document"
   type        = string
 }
 
