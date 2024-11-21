@@ -73,8 +73,5 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: googleapis/release-please-action@v4
+      - uses: techpivot/terraform-module-releaser@v1
         id: release-please
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: terraform-module
