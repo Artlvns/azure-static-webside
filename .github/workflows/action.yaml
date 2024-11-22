@@ -66,7 +66,12 @@ jobs:
         output-method: inject
         git-push: "true"
 
-  default:
-    uses: cloudposse/github-actions-workflows-terraform-module/.github/workflows/feature-branch.yml@main
-    secrets:
-      REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  release:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
