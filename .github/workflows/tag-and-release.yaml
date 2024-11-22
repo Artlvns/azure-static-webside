@@ -21,3 +21,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: terraform-module
+          skip-github-pull-request: true                  
