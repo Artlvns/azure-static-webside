@@ -69,4 +69,8 @@ jobs:
 
   release:
     uses: cloudposse/.github/.github/workflows/shared-release-branches.yml@main
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
     secrets: inherit
